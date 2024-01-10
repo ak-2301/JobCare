@@ -115,7 +115,7 @@ const Information = () => {
               </div>
             </div>
 
-            <div className="flex items-start gap-4">
+            {/* <div className="flex items-start gap-4">
               <span className="shrink-0 rounded-lg bg-blue-800 p-4">
                 <svg
                   className="h-5 w-5"
@@ -206,7 +206,7 @@ const Information = () => {
                   animi! Quaerat, saepe?
                 </p>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

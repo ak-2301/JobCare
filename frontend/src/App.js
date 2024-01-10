@@ -11,10 +11,11 @@ import PublicRoute from "./components/routes/PublicRoute";
 import Jobs from "./pages/Jobs";
 import Footer from "./components/Footer/Footer";
 import Profile from "./pages/Profile";
+import Apply from "./pages/Apply";
+import Header from "./components/Header/Header";
 function App() {
   return (
     <>
-      
       <ToastContainer />
       <Routes>
         <Route
@@ -22,7 +23,7 @@ function App() {
           element={
             <PublicRoute>
               <Homepage />
-              <Footer/>
+              <Footer />
             </PublicRoute>
           }
         />
@@ -43,14 +44,24 @@ function App() {
           }
         />
         <Route
+          path="/apply"
+          element={
+            <PublicRoute>
+              <Header/>
+              <Apply />
+              <Footer/>
+            </PublicRoute>
+          }
+        />
+        <Route
           path="/jobs"
           element={
-            <PrivateRoute>
+            <PublicRoute>
               <Jobs />
-            </PrivateRoute>
+            </PublicRoute>
           }
         ></Route>
-          <Route
+        <Route
           path="/profile"
           element={
             <PrivateRoute>
@@ -68,7 +79,6 @@ function App() {
         />
         <Route path="*" element={<Notfound />} />
       </Routes>
-      
     </>
   );
 }

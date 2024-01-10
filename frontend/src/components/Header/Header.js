@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -27,83 +28,73 @@ const Header = () => {
               <nav aria-label="Global" className="hidden md:block">
                 <ul className="flex items-center gap-6 text-sm">
                   <li>
-                    <a
+                    <Link
                       className="text-gray-500 transition hover:text-gray-500/75"
-                      href="/"
+                      to="/"
+                    >
+                      {" "}
+                      Home{" "}
+                    </Link>
+                  </li>
+
+                  <li>
+                    <Link
+                      className="text-gray-500 transition hover:text-gray-500/75"
+                      to="/apply"
+                    >
+                      {" "}
+                      Apply{" "}
+                    </Link>
+                  </li>
+
+                  <li>
+                    <Link
+                      className="text-gray-500 transition hover:text-gray-500/75"
+                      to="/"
+                    >
+                      {" "}
+                      Companies{" "}
+                    </Link>
+                  </li>
+
+                  <li>
+                    <Link
+                      className="text-gray-500 transition hover:text-gray-500/75"
+                      to="/"
                     >
                       {" "}
                       About{" "}
-                    </a>
+                    </Link>
                   </li>
 
                   <li>
-                    <a
+                    <Link
                       className="text-gray-500 transition hover:text-gray-500/75"
-                      href="/"
+                      to="/"
                     >
                       {" "}
-                      Careers{" "}
-                    </a>
-                  </li>
-
-                  <li>
-                    <a
-                      className="text-gray-500 transition hover:text-gray-500/75"
-                      href="/"
-                    >
-                      {" "}
-                      History{" "}
-                    </a>
-                  </li>
-
-                  <li>
-                    <a
-                      className="text-gray-500 transition hover:text-gray-500/75"
-                      href="/"
-                    >
-                      {" "}
-                      Services{" "}
-                    </a>
-                  </li>
-
-                  <li>
-                    <a
-                      className="text-gray-500 transition hover:text-gray-500/75"
-                      href="/"
-                    >
-                      {" "}
-                      Projects{" "}
-                    </a>
-                  </li>
-
-                  <li>
-                    <a
-                      className="text-gray-500 transition hover:text-gray-500/75"
-                      href="/"
-                    >
-                      {" "}
-                      Blog{" "}
-                    </a>
+                      Contact Us{" "}
+                    </Link>
                   </li>
                 </ul>
               </nav>
 
               <div className="flex items-center gap-4">
                 <div className="sm:flex sm:gap-4">
-                  <a
+                  <Link
                     className="rounded-md bg-blue-600 px-5 py-2.5 text-sm font-medium text-white shadow"
-                    href="/login"
+                    to="/login"
                   >
                     Login
-                  </a>
+                  </Link>
 
                   <div className="hidden sm:flex">
-                    <a
+                    <Link
                       className="rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-blue-600"
-                      href="/register"
+                      to="/register"
                     >
                       Register
-                    </a>
+                    </Link>
                   </div>
                 </div>
 
