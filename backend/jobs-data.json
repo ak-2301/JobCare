@@ -1,0 +1,44 @@
+[
+  {
+    "position": "Assistant Professor",
+    "company": "Eabox",
+    "workLocation": "Peru",
+    "workType": "full-time",
+    "status": "interview"
+  },
+  {
+    "position": "Account Coordinator",
+    "company": "Rhyzio",
+    "status": "interview",
+    "workLocation": "Sweden",
+    "workType": "full-time"
+  },
+  {
+    "position": "Statistician I",
+    "company": "Feedmix",
+    "workLocation": "China",
+    "workType": "internship",
+    "status": "pending"
+  },
+  {
+    "position": "Staff Scientist",
+    "company": "Twitterbeat",
+    "workLocation": "Democratic Republic of the Congo",
+    "workType": "part-time",
+    "status": "interview"
+  },
+  {
+    "position": "Compensation Analyst",
+    "company": "Mita",
+    "workLocation": "Thailand",
+    "workType": "internship",
+    "status": "interview"
+  },
+  {
+    "position": "Design Engineer",
+    "company": "Devpulse",
+    "workLocation": "Poland",
+    "workType": "internship",
+    "status": "reject"
+  }
+]
